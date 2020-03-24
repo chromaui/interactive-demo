@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "storybook": "start-storybook -p 6006",
+    "chromatic": "chromatic test --app-code 4ozfzu7vfhf",
     "build-storybook": "build-storybook"
   },
   "repository": {
