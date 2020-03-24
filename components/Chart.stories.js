@@ -6,6 +6,7 @@ import Chart from './Chart';
 // (title, story name, etc.) so changing that will break the integration.
 export default {
   title: 'Chart',
+  component: Chart,
 };
 
 export const Base = () => <Chart />;

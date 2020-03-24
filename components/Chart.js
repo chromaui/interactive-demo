@@ -2,6 +2,7 @@ import { Stream } from '@nivo/stream';
 import random from 'lodash/random';
 import range from 'lodash/range';
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const keys = ['Zol', 'Tom', 'Dom', 'Kyle', 'Gert', 'Norbert', 'Michael'];
 
@@ -24,6 +25,14 @@ const data = [
   { Zol: 79, Tom: 155, Dom: 116, Kyle: 34, Gert: 199, Norbert: 34, Michael: 36 },
 ];
 
+/**
+ * A `StreamChart` is used to display changes in different categories over time. It's similar to a stacked area graph, but plots values on a center line instead of a fixed baseline. Stream graphs are useful for illustrating changes in large data sets over time. It gives viewers a sense of trends in a glance.
+ *
+ * You probably don't want to use a Stream graph with complex, nuanced data sets. Or when precision is critical.
+ *
+ * This component uses the [Nivo data visualization library](https://nivo.rocks/stream/) by Raphaël Benitte.
+ */
+
 export default function Chart() {
   return (
     <Stream
@@ -33,6 +42,48 @@ export default function Chart() {
       margin={{ top: 50, right: 40, bottom: 60, left: 40 }}
       keys={keys}
       data={data}
+      colors={{ scheme: 'purple_blue_green' }}
     />
   );
 }
+
+Chart.propTypes = {
+  /**
+ Toggle transitions
+*/
+  animate: PropTypes.bool,
+  /**
+ Width of the container
+*/
+  width: PropTypes.number.isRequired,
+  /**
+ Height of container
+*/
+  height: PropTypes.number.isRequired,
+  /**
+ Space between the outer edges of the container
+*/
+  margin: PropTypes.object,
+  /**
+ Pick between color schemes that come out of the box
+*/
+  colors: PropTypes.oneOf(['blues, greens, greys, purple_blue_green']),
+  /**
+ Data that supplies the graph
+*/
+  data: PropTypes.array,
+  /**
+   The category names that display in the legend
+  */
+  keys: PropTypes.array,
+};
+
+Chart.defaultProps = {
+  animate: true,
+  width: 900,
+  height: 360,
+  margin: { top: 50, right: 40, bottom: 60, left: 40 },
+  colors: 'purple_blue_green',
+  data: null,
+  keys: null,
+};
