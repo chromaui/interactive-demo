@@ -5,7 +5,7 @@
   "files": [
     "dist"
   ],
-  "main": "dist/index.js",
+  "main": "dist/Chart.js",
   "scripts": {
     "build": "babel components -d dist",
     "storybook": "start-storybook -p 6006",
@@ -33,6 +33,7 @@
     "storybook-chromatic": "^3.5.2"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.8.7",
     "@nivo/stream": "^0.61.1",
     "lodash": "^4.17.15",
     "react": "^16.13.1",
