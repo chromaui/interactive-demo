@@ -5,7 +5,7 @@
   "files": [
     "dist"
   ],
-  "main": "dist/index.js",
+  "main": "dist/Chart.js",
   "scripts": {
     "build": "babel components -d dist",
     "storybook": "start-storybook -p 6006",
