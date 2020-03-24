@@ -1,0 +1,30 @@
+{
+  "name": "chromatic-interactive-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:chromaui/interactive-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://github.com/chromaui/interactive-demo",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@storybook/react": "^5.3.17",
+    "babel-loader": "^8.1.0",
+    "storybook-chromatic": "^3.5.2"
+  },
+  "dependencies": {
+    "@nivo/stream": "^0.61.1",
+    "lodash": "^4.17.15",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

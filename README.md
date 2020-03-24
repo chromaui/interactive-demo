@@ -1,0 +1,3 @@
+# Chromatic Test
+
+Hello merge!
