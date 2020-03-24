@@ -1,0 +1,14 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "targets": {
+          "ie": "11"
+        }
+      }
+    ],
+    "@babel/react"
+  ],
+  "ignore": ["**/node_modules"]
+}
