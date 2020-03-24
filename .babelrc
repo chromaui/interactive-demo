@@ -3,7 +3,6 @@
     [
       "@babel/env",
       {
-        "debug": true,
         "targets": {
           "ie": "11"
         },
