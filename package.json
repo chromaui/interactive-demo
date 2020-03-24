@@ -17,6 +17,7 @@
   "homepage": "https://github.com/chromaui/interactive-demo",
   "devDependencies": {
     "@babel/core": "^7.9.0",
+    "@storybook/addon-docs": "^5.3.17",
     "@storybook/react": "^5.3.17",
     "babel-loader": "^8.1.0",
     "storybook-chromatic": "^3.5.2"
