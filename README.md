@@ -1,3 +1,3 @@
-# Chromatic Test
+# Interactive Demo
 
-Hello merge!
+Interactive demo for the Chromatic marketing site.
