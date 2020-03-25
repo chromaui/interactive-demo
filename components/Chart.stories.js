@@ -7,6 +7,20 @@ import Chart from './Chart';
 export default {
   title: 'Chart',
   component: Chart,
+  decorators: [
+    storyFn => (
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          minHeight: '100vh',
+        }}
+      >
+        <div style={{ height: '300px', width: '100%', maxWidth: 800 }}>{storyFn()}</div>
+      </div>
+    ),
+  ],
 };
 
 export const Base = () => <Chart />;

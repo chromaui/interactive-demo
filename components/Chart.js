@@ -1,4 +1,4 @@
-import { Stream } from '@nivo/stream';
+import { ResponsiveStream } from '@nivo/stream';
 import random from 'lodash/random';
 import range from 'lodash/range';
 import React from 'react';
@@ -35,14 +35,13 @@ const data = [
 
 export default function Chart() {
   return (
-    <Stream
+    <ResponsiveStream
       animate
-      width={900}
-      height={360}
       margin={{ top: 50, right: 40, bottom: 60, left: 40 }}
       keys={keys}
       data={data}
       colors={{ scheme: 'purple_blue_green' }}
+      style={{ maxWidth: '100%', maxHeight: '100%' }}
     />
   );
 }
@@ -67,7 +66,7 @@ Chart.propTypes = {
   /**
  Pick between color schemes that come out of the box
 */
-  colors: PropTypes.oneOf(['blues, greens, greys, purple_blue_green']),
+  colors: PropTypes.oneOf(['blues', 'greens', 'greys', 'purple_blue_green']),
   /**
  Data that supplies the graph
 */
