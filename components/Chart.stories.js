@@ -11,7 +11,9 @@ export default {
   decorators: [
     storyFn =>
       isChromatic() ? (
-        <div style={{ height: '300px', width: '100%', maxWidth: 800 }}>{storyFn()}</div>
+        <div style={{ height: '300px', width: '100%', maxWidth: 800, display: 'inline-block' }}>
+          {storyFn()}
+        </div>
       ) : (
         <div
           style={{
