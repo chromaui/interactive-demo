@@ -2,7 +2,7 @@ import React from 'react';
 import Chart from './Chart';
 import isChromatic from 'storybook-chromatic/isChromatic';
 
-// WARNING: Best not to change anyting in here. The place that depends on this
+// WARNING: Best not to change much in here. The place that depends on this
 // component in the Chromatic codebase depends on the values defined here
 // (title, story name, etc.) so changing that will break the integration.
 export default {
