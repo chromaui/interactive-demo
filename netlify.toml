@@ -1,4 +1,5 @@
 [[headers]]
   for = "/*"
     [headers.values]
-    Access-Control-Allow-Origin = "https://storybook.dev-chromatic.com"
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Credentials = true
