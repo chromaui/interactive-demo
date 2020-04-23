@@ -14,7 +14,7 @@ jobs:
           yarn build-storybook
       - uses: chromaui/action@v1
         env:
-          CHROMATIC_INDEX_URL: https://staging-www.chromaticqa.com
+          CHROMATIC_INDEX_URL: https://www.staging-chromatic.com
         with:
           appCode: mj0nvsrz1ja
           token: ${{ secrets.GITHUB_TOKEN }}
