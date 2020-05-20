@@ -29,4 +29,4 @@ export default {
   ],
 };
 
-export const Base = () => <Chart />;
+export const Derp = () => <Chart />;
