@@ -30,8 +30,3 @@ export default {
 };
 
 export const Derp = () => <Chart />;
-
-export const Derp2 = () => {
-  throw new Error('Broken');
-  return <Chart />;
-};
