@@ -1,6 +1,6 @@
 import React from 'react';
 import Chart from './Chart';
-import isChromatic from 'storybook-chromatic/isChromatic';
+import isChromatic from 'chromatic/isChromatic';
 
 // WARNING: Best not to change much in here. The place that depends on this
 // component in the Chromatic codebase depends on the values defined here
