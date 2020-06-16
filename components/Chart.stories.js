@@ -9,7 +9,7 @@ export default {
   title: 'Chart',
   component: Chart,
   decorators: [
-    storyFn =>
+    (storyFn) =>
       isChromatic() ? (
         <div style={{ height: '300px', width: '100%', maxWidth: 800, display: 'inline-block' }}>
           {storyFn()}
@@ -20,7 +20,7 @@ export default {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            minHeight: '100vh',
+            minHeight: '80vh',
           }}
         >
           <div style={{ height: '300px', width: '100%', maxWidth: 800 }}>{storyFn()}</div>
